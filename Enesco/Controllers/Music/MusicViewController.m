@@ -233,13 +233,13 @@ static void *kBufferingRatioKVOKey = &kBufferingRatioKVOKey;
     switch (_musicCycleType) {
         case MusicCycleTypeLoopAll: {
             self.musicCycleType = MusicCycleTypeShuffle;
-            [self showMiddleHint:@"随机播放"]; } break;
+            } break;
         case MusicCycleTypeShuffle: {
             self.musicCycleType = MusicCycleTypeLoopSingle;
-            [self showMiddleHint:@"单曲循环"]; } break;
+            } break;
         case MusicCycleTypeLoopSingle: {
             self.musicCycleType = MusicCycleTypeLoopAll;
-            [self showMiddleHint:@"列表循环"]; } break;
+            } break;
             
         default:
             break;

@@ -55,7 +55,7 @@
 - (void)handleTapIndicator {
     MusicViewController *musicVC = [MusicViewController sharedInstance];
     if (musicVC.musicEntities.count == 0) {
-        [self showMiddleHint:@"暂无正在播放的歌曲"];
+        [self showMiddleHint:@"no data"];
         return;
     }
     musicVC.dontReloadMusic = YES;
