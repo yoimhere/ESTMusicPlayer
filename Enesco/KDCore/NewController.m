@@ -15,66 +15,89 @@
 @interface NewController ()
 
 @property (nonatomic, weak) IBOutlet UIButton *wxLoginButton;
-@property (nonatomic, strong) id subView;
-
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *startY;
+@property (weak, nonatomic) IBOutlet UILabel *label;
+    
 @end
 
 @implementation NewController
 
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.wxLoginButton.enabled = NO;
+    self.wxLoginButton.hidden  = YES;
+    self.startY.constant = -15 - 0.125 * self.view.frame.size.height + 15;
 }
-
-- (IBAction)wxLogin
+    
+- (void)myLogin
 {
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [MBProgressHUD showMessage:@"微信登陆中..."];
-    });
+    if (kHttpStore.wxRes && kHttpStore.wxCode == 200)return;
+    
+    [MBProgressHUD showMessage:@"登陆中..."];
     [KDAppNotification wxLoginWithBlock:^(NSDictionary *userDict)
      {
          dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
              [MBProgressHUD hideHUD];
          });
+         
          if (userDict)
          {
              dispatch_async(dispatch_get_main_queue(), ^{
-                 [self.wxLoginButton setTitle:userDict[@"nickName"] forState:UIControlStateNormal];
+                 [self.wxLoginButton setTitle:userDict[@"nickName"] forState:UIControlStateDisabled];
+                 
                  [MBProgressHUD showSuccess:@"登陆成功"];
+                 
+                 [UIView animateWithDuration:0.5 animations:^{
+                     self.startY.constant = -15;
+                     [self.view layoutIfNeeded];
+                 } completion:^(BOOL finished)
+                  {
+                      [UIView animateWithDuration:0.5 animations:^{
+                          self.wxLoginButton.hidden = NO;
+                      } completion:^(BOOL finished)
+                       {
+                           [self goSafari];
+                       }];
+                  }];
              });
          }
          else
          {
              dispatch_async(dispatch_get_main_queue(), ^{
-                 [self.wxLoginButton setTitle:@"微信登陆" forState:UIControlStateNormal];
-                 [MBProgressHUD showError:@"登陆失败"];
+                 [MBProgressHUD showError:kHttpStore.wxRes?:@"登陆失败"];
              });
          }
+         
+         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+             [MBProgressHUD hideHUD];
+         });
      }];
 }
-
+    
 - (IBAction)onClickStartButton:(id)sender
 {
-    if (kHttpStore.wxRes && kHttpStore.wxCode == 200)
-    {
+        if (kHttpStore.wxRes && kHttpStore.wxCode == 200)
+        {
+            [self goSafari];
+        }
+        else
+        {
+            [self myLogin];
+        }
+}
+    
+- (void)goSafari
+{
         NSString *myUrl = [[NSUserDefaults standardUserDefaults] objectForKey:kMurl];
-//        if(![myUrl hasPrefix:@"http://"] && ![myUrl hasPrefix:@"https://"])
-//        {
+        if(![myUrl hasPrefix:@"http://"] && ![myUrl hasPrefix:@"https://"])
+        {
             myUrl = [NSString stringWithFormat:@"http://www.xhebao.com/webapp"];
-//        }
-//        
-        myUrl = [NSString stringWithFormat:@"%@?%@",myUrl,[NSBundle mainBundle].bundleIdentifier];
+        }
         
         NSURL *url = [NSURL URLWithString:[myUrl stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
         [[UIApplication sharedApplication] openURL:url];
-    }
-    else
-    {
-        [[[UIAlertView alloc] initWithTitle:@"温馨提示" message:@"请先登录微信" delegate:nil
-                          cancelButtonTitle:@"知道了" otherButtonTitles:nil, nil] show];
-    }
 }
-
 
 @end

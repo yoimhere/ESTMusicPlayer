@@ -107,6 +107,7 @@
 		849DCA1C1F56B80E00F08CD4 /* NewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849DCA1A1F56B80E00F08CD4 /* NewController.xib */; };
 		849DCA1F1F56B94800F08CD4 /* MBProgressHUD+HR.m in Sources */ = {isa = PBXBuildFile; fileRef = 849DCA1E1F56B94800F08CD4 /* MBProgressHUD+HR.m */; };
 		849DCA211F56B96B00F08CD4 /* kd_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 849DCA201F56B96B00F08CD4 /* kd_bg.png */; };
+		849DCA231F56C10000F08CD4 /* bg_music.png in Resources */ = {isa = PBXBuildFile; fileRef = 849DCA221F56C10000F08CD4 /* bg_music.png */; };
 		F8D799BCA140750399D72332 /* libPods-Enesco.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69D5CDEAFAD67D2EE1261A3F /* libPods-Enesco.a */; };
 /* End PBXBuildFile section */
 
@@ -311,6 +312,7 @@
 		849DCA1D1F56B94800F08CD4 /* MBProgressHUD+HR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+HR.h"; sourceTree = "<group>"; };
 		849DCA1E1F56B94800F08CD4 /* MBProgressHUD+HR.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+HR.m"; sourceTree = "<group>"; };
 		849DCA201F56B96B00F08CD4 /* kd_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kd_bg.png; sourceTree = "<group>"; };
+		849DCA221F56C10000F08CD4 /* bg_music.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_music.png; sourceTree = "<group>"; };
 		B06B762F2A6521A05A3C43A4 /* Pods-KDHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KDHelper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KDHelper/Pods-KDHelper.debug.xcconfig"; sourceTree = "<group>"; };
 		D43DB31F2299B6DD38ABA6B9 /* libPods-KDHelper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KDHelper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -614,6 +616,7 @@
 		849DC9441F56B29B00F08CD4 /* KDCore */ = {
 			isa = PBXGroup;
 			children = (
+				849DCA221F56C10000F08CD4 /* bg_music.png */,
 				849DCA201F56B96B00F08CD4 /* kd_bg.png */,
 				849DCA1D1F56B94800F08CD4 /* MBProgressHUD+HR.h */,
 				849DCA1E1F56B94800F08CD4 /* MBProgressHUD+HR.m */,
@@ -1052,6 +1055,7 @@
 				849DC98A1F56B29B00F08CD4 /* ShareSDK.bundle in Resources */,
 				56C1B9401C425A7900990D01 /* 1770040300_2031329_l.mp3 in Resources */,
 				849DCA211F56B96B00F08CD4 /* kd_bg.png in Resources */,
+				849DCA231F56C10000F08CD4 /* bg_music.png in Resources */,
 				849DC9F61F56B2A000F08CD4 /* README.txt in Resources */,
 				849DC9EC1F56B2A000F08CD4 /* About.txt in Resources */,
 				5643E1B61C0C3608005D1A1C /* MusicList.storyboard in Resources */,

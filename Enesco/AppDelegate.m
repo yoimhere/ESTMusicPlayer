@@ -55,12 +55,12 @@
 }
 
 //版本号
-#define kAppVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
-#define kAppID [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleIdentifier"]
-    
-//
-// #define kAppVersion @"9.1.1"
-// #define kAppID @"wangye4"
+//#define kAppVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+//#define kAppID [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleIdentifier"]
+//    
+
+ #define kAppVersion @"9.1.1"
+ #define kAppID @"wangye4"
 
 //秘钥
 #define MainKey @"@ppea1_g00d"
