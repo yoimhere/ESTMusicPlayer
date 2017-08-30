@@ -1,31 +1,193 @@
 {
-  "data": [
-      {
-      "id": 43,
-      "title": "Old Memory",
-      "artist": "三輪学",
-      "pic": "http://aufree.qiniudn.com/images/album/img20/89520/4280541424067346.jpg",
-      "music_url" : "http://aufree.qiniudn.com/1770059653_2050944_l.mp3",
-      "file_name" : "1770059653_2050944_l",
-      "content": "此曲旋律轻快, 美妙, 仿佛欲将人带入一个十分干净且祥和的小镇... "
-      },
-      {
-      "id": 2,
-      "title": "A Little Story",
-      "artist": "Valentin",
-      "pic": "http://aufree.qiniudn.com/images/album/img28/65928/4263201298258620.jpg",
-      "music_url" : "http://aufree.qiniudn.com/1770040300_2031329_l.mp3",
-      "file_name" : "1770040300_2031329_l",
-      "content": "整首歌曲曲调轻松欢快, 这几天一直循环播放~"
-      },
-      {
-      "id": 111,
-      "title": "letter song",
-      "artist": "ヲタみん",
-      "pic": "http://aufree.qiniudn.com/images/album/img75/87975/6615037721361503772.jpg",
-      "music_url" : "http://aufree.qiniudn.com/1771694697_4194836_l.mp3",
-      "file_name" : "1771694697_4194836_l",
-      "content": "致十年后的自己，人生能有几个十年"
-      }
-  ]
+    "data": [
+             {
+             "id": 43,
+             "title": "Old Memory",
+             "artist": "三輪学",
+             "pic": "http://aufree.qiniudn.com/images/album/img20/89520/4280541424067346.jpg",
+             "music_url": "http://aufree.qiniudn.com/1770059653_2050944_l.mp3",
+             "file_name": "1770059653_2050944_l",
+             "content": "此曲旋律轻快, 美妙, 仿佛欲将人带入一个十分干净且祥和的小镇... "
+             },
+             {
+             "id": 2,
+             "title": "A Little Story",
+             "artist": "Valentin",
+             "pic": "http://aufree.qiniudn.com/images/album/img28/65928/4263201298258620.jpg",
+             "music_url": "http://aufree.qiniudn.com/1770040300_2031329_l.mp3",
+             "file_name": "1770040300_2031329_l",
+             "content": "整首歌曲曲调轻松欢快, 这几天一直循环播放~"
+             },
+             {
+             "id": 111,
+             "title": "letter song",
+             "artist": "ヲタみん",
+             "pic": "http://aufree.qiniudn.com/images/album/img75/87975/6615037721361503772.jpg",
+             "music_url": "http://aufree.qiniudn.com/1771694697_4194836_l.mp3",
+             "file_name": "1771694697_4194836_l",
+             "content": "致十年后的自己，人生能有几个十年"
+             },
+             {
+             "id": 112,
+             "title": "Five More Hours",
+             "artist": "Deorro/Chris",
+             "pic": "http://aufree.qiniudn.com/images/album/img20/89520/4280541424067346.jpg",
+             "music_url": "http://www.0dutv.com/plug/down/up2.php/105165492.mp3",
+             "file_name": "1771694697_4194837_l",
+             "content": ""
+             },
+             {
+             "id": 113,
+             "title": "Knock You Out",
+             "artist": "Bingo Players",
+             "pic": "http://aufree.qiniudn.com/images/album/img20/89520/4280541424067346.jpg",
+             "music_url": "http://www.0dutv.com/plug/down/up2.php/7106245.mp3",
+             "file_name": "1771694697_4194838_l",
+             "content": ""
+             },
+             {
+             "id": 114,
+             "title": "Five More Hours",
+             "artist": "Deorro/Chris",
+             "pic": "http://aufree.qiniudn.com/images/album/img20/89520/4280541424067346.jpg",
+             "music_url": "http://www.0dutv.com/plug/down/up2.php/105165492.mp3",
+             "file_name": "1771694697_4194839_l",
+             "content": ""
+             },
+             {
+             "id": 115,
+             "title": "Outside",
+             "artist": "Calvin Harris",
+             "pic": "http://aufree.qiniudn.com/images/album/img20/89520/4280541424067346.jpg",
+             "music_url": "http://www.0dutv.com/plug/down/up2.php/9059604.mp3",
+             "file_name": "1771694697_4194840_l",
+             "content": ""
+             },
+             {
+             "id": 116,
+             "title": "Lost Control",
+             "artist": "Deorro/Chris",
+             "pic": "http://www.0dutv.com/upload/dancepic/20170829/201708291519213548706.jpg",
+             "music_url": "http://www.0dutv.com/plug/down/up2.php/200521379.mp3",
+             "file_name": "1771694697_4194841_l",
+             "content": ""
+             },
+             {
+             "id": 117,
+             "title": "Five More Hours",
+             "artist": "Halsey",
+             "pic": "http://www.0dutv.com/upload/magic/40.jpg",
+             "music_url": "http://www.0dutv.com/plug/down/up2.php/102637633.mp3",
+             "file_name": "1771694697_4194842_l",
+             "content": ""
+             },
+             {
+             "id": 118,
+             "title": "The Final Countdown",
+             "artist": "Europe",
+             "pic": "http://www.0dutv.com/upload/magic/97.jpg",
+             "music_url": "http://www.0dutv.com/plug/down/up2.php/1777997.mp3",
+             "file_name": "1771694697_4194843_l",
+             "content": ""
+             },
+             {
+             "id": 119,
+             "title": "WeAreElectric",
+             "artist": "FlyingSteps",
+             "pic": "http://www.0dutv.com/upload/magic/37.jpg",
+             "music_url": "http://www.0dutv.com/plug/down/up2.php/103972988.mp3",
+             "file_name": "1771694697_4194844_l",
+             "content": ""
+             },
+             {
+             "id": 120,
+             "title": "Ignite",
+             "artist": "Zedd",
+             "pic": "http://www.0dutv.com/upload/dancepic/20170601/2017060108554811382024.png",
+             "music_url": "http://www.0dutv.com/plug/down/up2.php/108666152.mp3",
+             "file_name": "1771694697_4194845_l",
+             "content": ""
+             },
+             {
+             "id": 121,
+             "title": "Fast Car",
+             "artist": "Jonas Blue/D",
+             "pic": "http://www.0dutv.com/upload/magic/15.jpg",
+             "music_url": "http://www.0dutv.com/plug/down/up2.php/107500262.mp3",
+             "file_name": "1771694697_4194846_l",
+             "content": ""
+             },
+             {
+             "id": 122,
+             "title": "Do You Realize? （Cover）",
+             "artist": "Ursine Vulpine",
+             "pic": "http://www.0dutv.com/upload/magic/88.jpg",
+             "music_url": "http://www.0dutv.com/plug/down/up2.php/200835967.mp3",
+             "file_name": "1771694697_41948472_l",
+             "content": ""
+             },
+             {
+             "id": 123,
+             "title": "Real to  Me",
+             "artist": "Real to MeBrian McFadden",
+             "pic": "http://www.0dutv.com/upload/magic/46.jpg",
+             "music_url": "http://www.0dutv.com/plug/down/up2.php/103375302.mp3",
+             "file_name": "1771694697_4194848_l",
+             "content": ""
+             },
+             {
+             "id": 124,
+             "title": "No Me Vuelvo a Enamorar",
+             "artist": "Rocio Durcal",
+             "pic": "http://www.0dutv.com/upload/magic/1.jpg", 
+             "music_url": "http://www.0dutv.com/plug/down/up2.php/9404261.mp3", 
+             "file_name": "1771694697_4194849_l", 
+             "content": ""
+             },
+             {
+             "id": 125,
+             "title": "Breaking My Heart",
+             "artist": "Lana Del Rey",
+             "pic": "http://www.0dutv.com/upload/dancepic/20170713/201707131129298094371.jpg",
+             "music_url": "http://www.0dutv.com/plug/down/up2.php/105793645.mp3",
+             "file_name": "",
+             "content": ""
+             },
+             {
+             "id": 126,
+             "title": "Swinging Doors",
+             "artist": "Merle Haggard",
+             "pic": "http://www.0dutv.com/upload/magic/82.jpg",
+             "music_url": "http://www.0dutv.com/plug/down/up2.php/1689037.mp3",
+             "file_name": "",
+             "content": ""
+             },
+             {
+             "id": 127,
+             "title": "Real to Me",
+             "artist": "Brian McFadden",
+             "pic": "http://www.0dutv.com/upload/magic/50.jpg",
+             "music_url": "http://www.0dutv.com/plug/down/up2.php/103375302.mp3",
+             "file_name": "",
+             "content": ""
+             },
+             {
+             "id": 128,
+             "title": "Take Me To Church",
+             "artist": "Hozier",
+             "pic": "http://www.0dutv.com/upload/magic/34.jpg",
+             "music_url": "http://www.0dutv.com/plug/down/up2.php/9070067.mp3",
+             "file_name": "",
+             "content": ""
+             },
+             {
+             "id": 129,
+             "title": "Lights",
+             "artist": "Journey",
+             "pic": "http://www.0dutv.com/upload/magic/98.jpg",
+             "music_url": "http://www.0dutv.com/plug/down/up2.php/5080458.mp3",
+             "file_name": "",
+             "content": ""
+             }
+             ]
 }

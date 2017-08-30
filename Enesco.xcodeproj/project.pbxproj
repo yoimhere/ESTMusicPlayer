@@ -35,7 +35,7 @@
 		56C1B9411C425A7900990D01 /* 1770059653_2050944_l.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 56C1B9371C425A7900990D01 /* 1770059653_2050944_l.mp3 */; };
 		56C1B9421C425A7900990D01 /* 1771694697_4194836_l.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 56C1B9381C425A7900990D01 /* 1771694697_4194836_l.mp3 */; };
 		56DBB02B1C116A280089EC56 /* music_list.json in Resources */ = {isa = PBXBuildFile; fileRef = 56DBB02A1C116A280089EC56 /* music_list.json */; };
-		8DA7CCFE08C6AD8DB730342B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76CDD7DA644716A3EBA6F9D9 /* libPods.a */; };
+		F8D799BCA140750399D72332 /* libPods-Enesco.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69D5CDEAFAD67D2EE1261A3F /* libPods-Enesco.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +56,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2277346BF9C0C8F49C7C5B8F /* Pods-Enesco.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Enesco.release.xcconfig"; path = "Pods/Target Support Files/Pods-Enesco/Pods-Enesco.release.xcconfig"; sourceTree = "<group>"; };
+		282EACD0D1C10B425E6B7EAE /* Pods-Enesco.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Enesco.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Enesco/Pods-Enesco.debug.xcconfig"; sourceTree = "<group>"; };
 		5643E14B1C0C2AEA005D1A1C /* Enesco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Enesco.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5643E14F1C0C2AEA005D1A1C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5643E1511C0C2AEA005D1A1C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -109,9 +111,7 @@
 		56C1B9371C425A7900990D01 /* 1770059653_2050944_l.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 1770059653_2050944_l.mp3; sourceTree = "<group>"; };
 		56C1B9381C425A7900990D01 /* 1771694697_4194836_l.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 1771694697_4194836_l.mp3; sourceTree = "<group>"; };
 		56DBB02A1C116A280089EC56 /* music_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = music_list.json; sourceTree = "<group>"; };
-		76CDD7DA644716A3EBA6F9D9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		9B1097A24F85CAE0DADCD031 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		BD84ABFB7556BE1739576F06 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		69D5CDEAFAD67D2EE1261A3F /* libPods-Enesco.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Enesco.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DA7CCFE08C6AD8DB730342B /* libPods.a in Frameworks */,
+				F8D799BCA140750399D72332 /* libPods-Enesco.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,15 +140,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		29781655CCCC22D9AAAB2C0E /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				BD84ABFB7556BE1739576F06 /* Pods.debug.xcconfig */,
-				9B1097A24F85CAE0DADCD031 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		5643E1421C0C2AEA005D1A1C = {
 			isa = PBXGroup;
 			children = (
@@ -156,8 +147,8 @@
 				5643E1671C0C2AEA005D1A1C /* EnescoTests */,
 				5643E1721C0C2AEA005D1A1C /* EnescoUITests */,
 				5643E14C1C0C2AEA005D1A1C /* Products */,
-				29781655CCCC22D9AAAB2C0E /* Pods */,
-				8AEF1BF70344254D929781FD /* Frameworks */,
+				72F46FF4AC7DCFD3DB35B9E0 /* Pods */,
+				D2893133AD94E256B21D7072 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -394,10 +385,19 @@
 			path = Musics;
 			sourceTree = "<group>";
 		};
-		8AEF1BF70344254D929781FD /* Frameworks */ = {
+		72F46FF4AC7DCFD3DB35B9E0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				76CDD7DA644716A3EBA6F9D9 /* libPods.a */,
+				282EACD0D1C10B425E6B7EAE /* Pods-Enesco.debug.xcconfig */,
+				2277346BF9C0C8F49C7C5B8F /* Pods-Enesco.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D2893133AD94E256B21D7072 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				69D5CDEAFAD67D2EE1261A3F /* libPods-Enesco.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -409,12 +409,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5643E1781C0C2AEA005D1A1C /* Build configuration list for PBXNativeTarget "Enesco" */;
 			buildPhases = (
-				3212EC2FA466FB5CDAFE8687 /* Check Pods Manifest.lock */,
+				DFA6A9AA051F632B042F858E /* [CP] Check Pods Manifest.lock */,
 				5643E1471C0C2AEA005D1A1C /* Sources */,
 				5643E1481C0C2AEA005D1A1C /* Frameworks */,
 				5643E1491C0C2AEA005D1A1C /* Resources */,
-				2948976630AA0D9941AE0D55 /* Embed Pods Frameworks */,
-				C208D8EB01D7BD42F4394575 /* Copy Pods Resources */,
+				743E5D8CF127279B204E6F7A /* [CP] Embed Pods Frameworks */,
+				59560769437204786E66806D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -472,8 +472,8 @@
 				TargetAttributes = {
 					5643E14A1C0C2AEA005D1A1C = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = W4M3J6TJMK;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = 25EA3KAABR;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -545,49 +545,52 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2948976630AA0D9941AE0D55 /* Embed Pods Frameworks */ = {
+		59560769437204786E66806D /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Enesco/Pods-Enesco-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3212EC2FA466FB5CDAFE8687 /* Check Pods Manifest.lock */ = {
+		743E5D8CF127279B204E6F7A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Enesco/Pods-Enesco-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C208D8EB01D7BD42F4394575 /* Copy Pods Resources */ = {
+		DFA6A9AA051F632B042F858E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Enesco-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -750,34 +753,38 @@
 		};
 		5643E1791C0C2AEA005D1A1C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BD84ABFB7556BE1739576F06 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 282EACD0D1C10B425E6B7EAE /* Pods-Enesco.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = W4M3J6TJMK;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25EA3KAABR;
 				GCC_PREFIX_HEADER = "Enesco/Enesco-Prefix.pch";
 				INFOPLIST_FILE = Enesco/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.estgroupe.estmusicplayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "0793f455-210d-4167-9358-1da21365dcb6";
-				PROVISIONING_PROFILE_SPECIFIER = "ESTMusicPlayer Dev";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
 		5643E17A1C0C2AEA005D1A1C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9B1097A24F85CAE0DADCD031 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 2277346BF9C0C8F49C7C5B8F /* Pods-Enesco.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25EA3KAABR;
 				GCC_PREFIX_HEADER = "Enesco/Enesco-Prefix.pch";
 				INFOPLIST_FILE = Enesco/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.estgroupe.estmusicplayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

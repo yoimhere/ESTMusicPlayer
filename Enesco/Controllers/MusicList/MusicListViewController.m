@@ -73,6 +73,8 @@
 - (NSDictionary *)dictionaryWithContentsOfJSONString:(NSString *)fileLocation {
     NSString *filePath = [[NSBundle mainBundle] pathForResource:[fileLocation stringByDeletingPathExtension] ofType:@"json"];
     NSData *data = [NSData dataWithContentsOfFile:filePath];
+    data = [self removeUnescapedCharacter:data];
+    
     __autoreleasing NSError* error = nil;
     id result = [NSJSONSerialization JSONObjectWithData:data
                                                 options:kNilOptions error:&error];
@@ -80,6 +82,24 @@
     return result;
 }
 
+- (NSData *)removeUnescapedCharacter:(NSData *)data
+{
+    NSString *inputStr = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    NSCharacterSet *controlChars = [NSCharacterSet controlCharacterSet];//获取那些特殊字符
+    NSRange range = [inputStr rangeOfCharacterFromSet:controlChars];//寻找字符串中有没有这些特殊字符
+    if (range.location != NSNotFound)
+    {
+        NSMutableString *mutable = [NSMutableString stringWithString:inputStr];
+        while (range.location != NSNotFound)
+        {
+            [mutable deleteCharactersInRange:range];//去掉这些特殊字符
+            range = [mutable rangeOfCharacterFromSet:controlChars];
+        }
+        return [mutable dataUsingEncoding:NSUTF8StringEncoding];
+    }
+    return [inputStr dataUsingEncoding:NSUTF8StringEncoding];
+}
+    
 # pragma mark - Tableview delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
