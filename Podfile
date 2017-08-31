@@ -1,6 +1,6 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
-target 'KDHelper' do
+target 'KDMusic' do
  pod 'DOUAudioStreamer', '0.2.11'
  pod 'SDWebImage'
  pod 'GVUserDefaults'

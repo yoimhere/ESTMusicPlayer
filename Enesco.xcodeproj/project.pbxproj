@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E5F5F31615F03A7A2D619E0 /* libPods-KDHelper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D43DB31F2299B6DD38ABA6B9 /* libPods-KDHelper.a */; };
 		5643E1501C0C2AEA005D1A1C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5643E14F1C0C2AEA005D1A1C /* main.m */; };
 		5643E1531C0C2AEA005D1A1C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5643E1521C0C2AEA005D1A1C /* AppDelegate.m */; };
 		5643E15B1C0C2AEA005D1A1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5643E15A1C0C2AEA005D1A1C /* Assets.xcassets */; };
@@ -36,6 +35,7 @@
 		56C1B9411C425A7900990D01 /* 1770059653_2050944_l.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 56C1B9371C425A7900990D01 /* 1770059653_2050944_l.mp3 */; };
 		56C1B9421C425A7900990D01 /* 1771694697_4194836_l.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 56C1B9381C425A7900990D01 /* 1771694697_4194836_l.mp3 */; };
 		56DBB02B1C116A280089EC56 /* music_list.json in Resources */ = {isa = PBXBuildFile; fileRef = 56DBB02A1C116A280089EC56 /* music_list.json */; };
+		7054201DC8C4C01112EDAF92 /* libPods-KDMusic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 153CE3862A64B57C5BED78B1 /* libPods-KDMusic.a */; };
 		849DC9761F56B29B00F08CD4 /* KDAp.m in Sources */ = {isa = PBXBuildFile; fileRef = 849DC9471F56B29B00F08CD4 /* KDAp.m */; };
 		849DC9771F56B29B00F08CD4 /* KDBackTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 849DC9491F56B29B00F08CD4 /* KDBackTask.m */; };
 		849DC9781F56B29B00F08CD4 /* KDInfoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 849DC94B1F56B29B00F08CD4 /* KDInfoHelper.m */; };
@@ -108,7 +108,7 @@
 		849DCA1F1F56B94800F08CD4 /* MBProgressHUD+HR.m in Sources */ = {isa = PBXBuildFile; fileRef = 849DCA1E1F56B94800F08CD4 /* MBProgressHUD+HR.m */; };
 		849DCA211F56B96B00F08CD4 /* kd_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 849DCA201F56B96B00F08CD4 /* kd_bg.png */; };
 		849DCA231F56C10000F08CD4 /* bg_music.png in Resources */ = {isa = PBXBuildFile; fileRef = 849DCA221F56C10000F08CD4 /* bg_music.png */; };
-		F8D799BCA140750399D72332 /* libPods-Enesco.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69D5CDEAFAD67D2EE1261A3F /* libPods-Enesco.a */; };
+		CD9996DB1F58632300A0CBAD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD9996DD1F58632300A0CBAD /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,6 +130,7 @@
 
 /* Begin PBXFileReference section */
 		112708FBFF7E93E7584C41A9 /* Pods-KDHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KDHelper.release.xcconfig"; path = "Pods/Target Support Files/Pods-KDHelper/Pods-KDHelper.release.xcconfig"; sourceTree = "<group>"; };
+		153CE3862A64B57C5BED78B1 /* libPods-KDMusic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KDMusic.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2277346BF9C0C8F49C7C5B8F /* Pods-Enesco.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Enesco.release.xcconfig"; path = "Pods/Target Support Files/Pods-Enesco/Pods-Enesco.release.xcconfig"; sourceTree = "<group>"; };
 		282EACD0D1C10B425E6B7EAE /* Pods-Enesco.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Enesco.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Enesco/Pods-Enesco.debug.xcconfig"; sourceTree = "<group>"; };
 		5643E14B1C0C2AEA005D1A1C /* KDMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KDMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,7 +139,6 @@
 		5643E1521C0C2AEA005D1A1C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5643E15A1C0C2AEA005D1A1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		5643E15D1C0C2AEA005D1A1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		5643E15F1C0C2AEA005D1A1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5643E1641C0C2AEA005D1A1C /* EnescoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnescoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5643E1681C0C2AEA005D1A1C /* EnescoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EnescoTests.m; sourceTree = "<group>"; };
 		5643E16A1C0C2AEA005D1A1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -314,6 +314,11 @@
 		849DCA201F56B96B00F08CD4 /* kd_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kd_bg.png; sourceTree = "<group>"; };
 		849DCA221F56C10000F08CD4 /* bg_music.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_music.png; sourceTree = "<group>"; };
 		B06B762F2A6521A05A3C43A4 /* Pods-KDHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KDHelper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KDHelper/Pods-KDHelper.debug.xcconfig"; sourceTree = "<group>"; };
+		BB51F49F000E5345CC2C6102 /* Pods-KDMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KDMusic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KDMusic/Pods-KDMusic.debug.xcconfig"; sourceTree = "<group>"; };
+		CD0118C71F585EB2009364E2 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		CD0972947F75B1F6C4FDC360 /* Pods-KDMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KDMusic.release.xcconfig"; path = "Pods/Target Support Files/Pods-KDMusic/Pods-KDMusic.release.xcconfig"; sourceTree = "<group>"; };
+		CD9996DC1F58632300A0CBAD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		CD9996DE1F58632900A0CBAD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D43DB31F2299B6DD38ABA6B9 /* libPods-KDHelper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KDHelper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -328,14 +333,13 @@
 				849DCA111F56B63200F08CD4 /* CoreText.framework in Frameworks */,
 				849DCA0F1F56B62A00F08CD4 /* QuartzCore.framework in Frameworks */,
 				849DC9851F56B29B00F08CD4 /* TencentOpenAPI.framework in Frameworks */,
-				F8D799BCA140750399D72332 /* libPods-Enesco.a in Frameworks */,
 				849DC9871F56B29B00F08CD4 /* libWeChatSDK.a in Frameworks */,
 				849DC9811F56B29B00F08CD4 /* ShareSDK.framework in Frameworks */,
 				849DC9821F56B29B00F08CD4 /* ShareSDKExtension.framework in Frameworks */,
 				849DC9841F56B29B00F08CD4 /* ShareSDKUI.framework in Frameworks */,
 				849DC9891F56B29B00F08CD4 /* MOBFoundation.framework in Frameworks */,
 				849DC98B1F56B29B00F08CD4 /* ShareSDKConnector.framework in Frameworks */,
-				0E5F5F31615F03A7A2D619E0 /* libPods-KDHelper.a in Frameworks */,
+				7054201DC8C4C01112EDAF92 /* libPods-KDMusic.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,7 +404,7 @@
 			children = (
 				5643E1511C0C2AEA005D1A1C /* AppDelegate.h */,
 				5643E1521C0C2AEA005D1A1C /* AppDelegate.m */,
-				5643E15F1C0C2AEA005D1A1C /* Info.plist */,
+				CD9996DD1F58632300A0CBAD /* InfoPlist.strings */,
 				5643E14F1C0C2AEA005D1A1C /* main.m */,
 				5643E1DA1C0C3BB7005D1A1C /* Enesco-Prefix.pch */,
 			);
@@ -609,6 +613,8 @@
 				2277346BF9C0C8F49C7C5B8F /* Pods-Enesco.release.xcconfig */,
 				B06B762F2A6521A05A3C43A4 /* Pods-KDHelper.debug.xcconfig */,
 				112708FBFF7E93E7584C41A9 /* Pods-KDHelper.release.xcconfig */,
+				BB51F49F000E5345CC2C6102 /* Pods-KDMusic.debug.xcconfig */,
+				CD0972947F75B1F6C4FDC360 /* Pods-KDMusic.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -634,7 +640,6 @@
 				849DC95A1F56B29B00F08CD4 /* KDInfo.m */,
 				849DC95B1F56B29B00F08CD4 /* NetworkType.h */,
 				849DC95C1F56B29B00F08CD4 /* NetworkType.m */,
-				849DC95D1F56B29B00F08CD4 /* OpenSDK1.7.9 */,
 				849DC95E1F56B29B00F08CD4 /* ShareSDK */,
 				849DC9741F56B29B00F08CD4 /* silence.wav */,
 			);
@@ -667,13 +672,6 @@
 				849DC9581F56B29B00F08CD4 /* KDHttpStore.m */,
 			);
 			path = KDHttp;
-			sourceTree = "<group>";
-		};
-		849DC95D1F56B29B00F08CD4 /* OpenSDK1.7.9 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = OpenSDK1.7.9;
 			sourceTree = "<group>";
 		};
 		849DC95E1F56B29B00F08CD4 /* ShareSDK */ = {
@@ -928,6 +926,7 @@
 				849DCA0E1F56B62A00F08CD4 /* QuartzCore.framework */,
 				69D5CDEAFAD67D2EE1261A3F /* libPods-Enesco.a */,
 				D43DB31F2299B6DD38ABA6B9 /* libPods-KDHelper.a */,
+				153CE3862A64B57C5BED78B1 /* libPods-KDMusic.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1002,7 +1001,7 @@
 				TargetAttributes = {
 					5643E14A1C0C2AEA005D1A1C = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = 25EA3KAABR;
+						DevelopmentTeam = J3AMM5AN76;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -1017,7 +1016,7 @@
 					};
 					5643E16E1C0C2AEA005D1A1C = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = T2ZCT295DT;
+						DevelopmentTeam = J3AMM5AN76;
 						TestTargetID = 5643E14A1C0C2AEA005D1A1C;
 					};
 				};
@@ -1029,6 +1028,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 5643E1421C0C2AEA005D1A1C;
 			productRefGroup = 5643E14C1C0C2AEA005D1A1C /* Products */;
@@ -1048,6 +1048,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				56C1B9421C425A7900990D01 /* 1771694697_4194836_l.mp3 in Resources */,
+				CD9996DB1F58632300A0CBAD /* InfoPlist.strings in Resources */,
 				56DBB02B1C116A280089EC56 /* music_list.json in Resources */,
 				849DCA1C1F56B80E00F08CD4 /* NewController.xib in Resources */,
 				849DC9881F56B29B00F08CD4 /* README.txt in Resources */,
@@ -1099,7 +1100,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KDHelper/Pods-KDHelper-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KDMusic/Pods-KDMusic-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		743E5D8CF127279B204E6F7A /* [CP] Embed Pods Frameworks */ = {
@@ -1114,7 +1115,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KDHelper/Pods-KDHelper-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KDMusic/Pods-KDMusic-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DFA6A9AA051F632B042F858E /* [CP] Check Pods Manifest.lock */ = {
@@ -1132,7 +1133,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1247,9 +1248,19 @@
 			isa = PBXVariantGroup;
 			children = (
 				5643E15D1C0C2AEA005D1A1C /* Base */,
+				CD0118C71F585EB2009364E2 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		CD9996DD1F58632300A0CBAD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD9996DC1F58632300A0CBAD /* zh-Hans */,
+				CD9996DE1F58632900A0CBAD /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1259,6 +1270,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -1305,6 +1317,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -1343,12 +1356,12 @@
 		};
 		5643E1791C0C2AEA005D1A1C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B06B762F2A6521A05A3C43A4 /* Pods-KDHelper.debug.xcconfig */;
+			baseConfigurationReference = BB51F49F000E5345CC2C6102 /* Pods-KDMusic.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 25EA3KAABR;
+				DEVELOPMENT_TEAM = J3AMM5AN76;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Enesco/KDCore/ShareSDK",
@@ -1413,12 +1426,12 @@
 		};
 		5643E17A1C0C2AEA005D1A1C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 112708FBFF7E93E7584C41A9 /* Pods-KDHelper.release.xcconfig */;
+			baseConfigurationReference = CD0972947F75B1F6C4FDC360 /* Pods-KDMusic.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 25EA3KAABR;
+				DEVELOPMENT_TEAM = J3AMM5AN76;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Enesco/KDCore/ShareSDK",
@@ -1507,6 +1520,7 @@
 		5643E17F1C0C2AEA005D1A1C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = J3AMM5AN76;
 				INFOPLIST_FILE = EnescoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.est-group.EnescoTests";
@@ -1519,6 +1533,7 @@
 		5643E1801C0C2AEA005D1A1C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = J3AMM5AN76;
 				INFOPLIST_FILE = EnescoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.est-group.EnescoTests";

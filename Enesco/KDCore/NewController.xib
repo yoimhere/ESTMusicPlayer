@@ -1,11 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,11 +20,8 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kd_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="Fwr-81-GdO">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="438.66666666666669"/>
-                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kd_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="Fwr-81-GdO"/>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tqp-Tn-boM">
-                    <rect key="frame" x="60" y="609" width="294" height="40"/>
                     <color key="backgroundColor" red="0.062745098040000002" green="0.74509803919999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="E1a-ke-N0S"/>
@@ -46,7 +40,6 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VXK-86-0le">
-                    <rect key="frame" x="60" y="517" width="294" height="40"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="YCa-ov-GYv"/>
                     </constraints>
@@ -61,7 +54,6 @@
                     </userDefinedRuntimeAttributes>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="助手打开成功" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K4i-EL-xp6">
-                    <rect key="frame" x="0.0" y="388.66666666666669" width="414" height="30"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="FWi-vJ-rIN"/>
                     </constraints>
@@ -70,7 +62,6 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="任务过程中请勿关闭助手" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XjG-4A-edP">
-                    <rect key="frame" x="0.0" y="720.33333333333348" width="414" height="15.666666666666629"/>
                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
@@ -81,6 +72,7 @@
                 <constraint firstItem="XjG-4A-edP" firstAttribute="leading" secondItem="fZA-DC-on3" secondAttribute="leading" id="6Ut-Vf-N8O"/>
                 <constraint firstItem="VXK-86-0le" firstAttribute="centerY" secondItem="fZA-DC-on3" secondAttribute="centerY" multiplier="3/2" constant="-15" id="7jV-9N-5sP"/>
                 <constraint firstItem="tqp-Tn-boM" firstAttribute="leading" secondItem="fZA-DC-on3" secondAttribute="leading" constant="60" id="A3q-uY-9sb"/>
+                <constraint firstItem="Fwr-81-GdO" firstAttribute="top" secondItem="fZA-DC-on3" secondAttribute="top" id="BEj-mL-D1S"/>
                 <constraint firstItem="VXK-86-0le" firstAttribute="centerX" secondItem="fZA-DC-on3" secondAttribute="centerX" id="CTi-oL-Ng2"/>
                 <constraint firstItem="K4i-EL-xp6" firstAttribute="top" secondItem="Fwr-81-GdO" secondAttribute="bottom" constant="-50" id="Ch4-t3-Nes"/>
                 <constraint firstItem="tqp-Tn-boM" firstAttribute="centerX" secondItem="fZA-DC-on3" secondAttribute="centerX" id="FUN-ms-277"/>
@@ -90,6 +82,7 @@
                 <constraint firstAttribute="trailing" secondItem="VXK-86-0le" secondAttribute="trailing" constant="60" id="Kpc-g2-1Tt"/>
                 <constraint firstItem="K4i-EL-xp6" firstAttribute="leading" secondItem="fZA-DC-on3" secondAttribute="leading" id="LNa-GY-oWM"/>
                 <constraint firstAttribute="trailing" secondItem="XjG-4A-edP" secondAttribute="trailing" id="NbJ-6R-DyL"/>
+                <constraint firstAttribute="bottom" secondItem="XjG-4A-edP" secondAttribute="bottom" id="T0M-a8-hdf"/>
                 <constraint firstAttribute="trailing" secondItem="tqp-Tn-boM" secondAttribute="trailing" constant="60" id="ZbE-Oa-JdR"/>
                 <constraint firstAttribute="trailing" secondItem="K4i-EL-xp6" secondAttribute="trailing" id="cJX-Kz-CFC"/>
                 <constraint firstItem="tqp-Tn-boM" firstAttribute="centerY" secondItem="fZA-DC-on3" secondAttribute="centerY" multiplier="7/4" constant="-15" id="hUj-c1-ZaX"/>

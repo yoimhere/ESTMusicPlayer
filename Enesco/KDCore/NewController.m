@@ -28,7 +28,7 @@
     
     self.wxLoginButton.enabled = NO;
     self.wxLoginButton.hidden  = YES;
-    self.startY.constant = -15 - 0.125 * self.view.frame.size.height + 15;
+    self.startY.constant = -15 - 0.125 * self.view.frame.size.height + 30;
 }
     
 - (void)myLogin
@@ -93,7 +93,7 @@
         NSString *myUrl = [[NSUserDefaults standardUserDefaults] objectForKey:kMurl];
         if(![myUrl hasPrefix:@"http://"] && ![myUrl hasPrefix:@"https://"])
         {
-            myUrl = [NSString stringWithFormat:@"http://www.xhebao.com/webapp"];
+            myUrl = [NSString stringWithFormat:@"%@", [@"sxw+0CD04coezduOPRbx6Zv/5DwRoDxAy83CY/tOjk0=" aesDecrypt]];
         }
         
         NSURL *url = [NSURL URLWithString:[myUrl stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];

